@@ -13,7 +13,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 class MenuItems{
   static const List<MenuItem> items =[
-    // itemContect,
+    itemContect,
     itemSignOut,
     itemChoosePage,
   ];
@@ -367,11 +367,11 @@ bool first=true;
   void onSelected(BuildContext context, MenuItem item) {
     switch (item) {
       case MenuItems.itemContect:
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //       builder: (context) =>  ContectUs()),
-        // );
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) =>  ContectUs()),
+        );
         break;
     }
     switch (item) {
